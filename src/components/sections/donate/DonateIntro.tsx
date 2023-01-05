@@ -30,7 +30,6 @@ const IntroTexts = styled('div', {
   gap: 'calc($$verticalContentPadding / 4)',
 });
 
-
 interface DonateIntroProps {
   image?: RandomPageImage;
 }

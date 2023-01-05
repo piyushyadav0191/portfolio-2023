@@ -34,14 +34,6 @@ const GitHubSponsorsButton = styled(LinkButton, {
   dark: ghSponsorsButtonStyles,
 });
 
-const paypalButtonStyles: CSS = {
-  color: theme.colors['text-primary']?.value,
-  backgroundColor: '#1a4593',
-  hocus: {
-    color: theme.colors['text-primary']?.value,
-    backgroundColor: '#002b7a',
-  },
-};
 
 
 export const DonateButtons = () => {
