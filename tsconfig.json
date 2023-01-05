@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/stitches": ["stitches.config.ts"],
+      "@/*": ["./src/*"],
+      "@/sections": ["./src/components/sections"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    },
+    "incremental": true,
+    // "jsxImportSource": "@emotion/react",
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [".next", ".idea", "node_modules"],
+  "include": [
+    "next-env.d.ts",
+    "global.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./.contentlayer/generated",
+    "next.config.js"
+  ]
+}
