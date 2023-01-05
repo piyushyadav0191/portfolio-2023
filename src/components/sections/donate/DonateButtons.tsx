@@ -1,7 +1,7 @@
 import Icon from '@mdi/react';
 
 import { Heading, LinkButton } from '@/components/atoms';
-import { mdiCreditCardChipOutline, mdiHeartOutline } from '@/icons';
+import { mdiHeartOutline } from '@/icons';
 import {
   styled,
   darkTheme as theme,
@@ -43,10 +43,6 @@ const paypalButtonStyles: CSS = {
   },
 };
 
-const PayPalButton = styled(LinkButton, {
-  ...paypalButtonStyles,
-  dark: paypalButtonStyles,
-});
 
 export const DonateButtons = () => {
   return (
