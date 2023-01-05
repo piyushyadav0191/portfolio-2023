@@ -97,7 +97,7 @@ export const Projects: FC<ProjectsProps> = (props) => {
         </Heading>
         <ProjectsButtons>
           <LinkButton
-            title={"Piyush Yadav"}
+            title={'Piyush Yadav'}
             href={'/'}
             outlined
           >

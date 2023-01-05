@@ -6,7 +6,6 @@ import {
   linkedInOutline,
   twitterOutline,
   mdiInstagram,
-  polywork,
   mastodon,
 } from '@/icons';
 import { styled } from '~/stitches';
@@ -72,15 +71,6 @@ const InstagramLink = styled(SocialLink, {
     color: '#d6249f',
     dark: {
       color: '#d6249f',
-    },
-  },
-});
-
-const PolyworkLink = styled(SocialLink, {
-  hocus: {
-    color: '#6959fc',
-    dark: {
-      color: '#6959fc',
     },
   },
 });

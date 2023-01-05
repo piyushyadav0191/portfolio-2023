@@ -30,12 +30,6 @@ const IntroTexts = styled('div', {
   gap: 'calc($$verticalContentPadding / 4)',
 });
 
-const List = styled('ul', {
-  m: 0,
-  p: 0,
-  ml: '$12',
-  pl: '$4',
-});
 
 interface DonateIntroProps {
   image?: RandomPageImage;

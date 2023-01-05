@@ -22,7 +22,7 @@ export const Animoji: FC<AnimojiProps> = (props) => {
   return (
     <Link
       href={'/about'}
-      title={"Me"}
+      title={'Me'}
       underline={false}
       css={{
         ...css,
