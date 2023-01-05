@@ -1,5 +1,4 @@
 import Icon from '@mdi/react';
-
 import { Heading, LinkButton } from '@/components/atoms';
 import { mdiHeartOutline } from '@/icons';
 import {
@@ -33,8 +32,6 @@ const GitHubSponsorsButton = styled(LinkButton, {
   ...ghSponsorsButtonStyles,
   dark: ghSponsorsButtonStyles,
 });
-
-
 
 export const DonateButtons = () => {
   return (
