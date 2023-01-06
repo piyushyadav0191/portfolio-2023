@@ -5,7 +5,6 @@ import { useTheme } from '@/providers/theme';
 import type { FC } from '@/types';
 import { unique } from '@/utils/unique';
 
-const defaultImage = 'https://jahir.dev/static/images/brand/banner.png';
 const defaultLogoImage =
   'https://jahir.dev/static/images/brand/logo-full-me.png';
 
@@ -55,7 +54,7 @@ const ImageMeta: FC<{ image?: string; metaImageStyle?: MetaImageStyle }> = (
   const { image, metaImageStyle = 'summary_large_image' } = props;
 
   const actualDefaultImage =
-    metaImageStyle === 'summary' ? defaultLogoImage : defaultImage;
+    metaImageStyle === 'summary' ? defaultLogoImage : defaultLogoImage;
   const actualImage = image || actualDefaultImage;
   const actualMetaImageStyle =
     actualImage === defaultLogoImage
