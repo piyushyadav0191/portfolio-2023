@@ -48,42 +48,6 @@ const ColorMeta: FC = () => {
   );
 };
 
-const ImageMeta: FC<{ image?: string; metaImageStyle?: MetaImageStyle }> = (
-  props,
-) => {
-  const { image, metaImageStyle = 'summary_large_image' } = props;
-
-  const actualDefaultImage =
-    metaImageStyle === 'summary' ? defaultLogoImage : defaultLogoImage;
-  const actualImage = image || actualDefaultImage;
-  const actualMetaImageStyle =
-    actualImage === defaultLogoImage
-      ? 'summary'
-      : metaImageStyle || 'summary_large_image';
-
-  return (
-    <>
-      <meta itemProp={'image'} content={actualImage} />
-      <meta property={'og:image'} content={actualImage} />
-
-      <meta
-        property={'twitter:card'}
-        name={'twitter:card'}
-        content={actualMetaImageStyle}
-      />
-      <meta
-        property={'twitter:image'}
-        name={'twitter:image'}
-        content={actualImage}
-      />
-      <meta
-        property={'twitter:image:src'}
-        name={'twitter:image:src'}
-        content={actualImage}
-      />
-    </>
-  );
-};
 
 export const Seo: FC<MetaData> = (props) => {
   const {
@@ -124,7 +88,6 @@ export const Seo: FC<MetaData> = (props) => {
         content={description}
       />
 
-      <ImageMeta image={image} metaImageStyle={metaImageStyle} />
       <ColorMeta />
     </Head>
   );
