@@ -1,5 +1,3 @@
-# [jahir.dev](https://jahir.dev)
-
 ## Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
@@ -54,26 +52,3 @@
 - **`src/lib/*`** - Short for "library", a collection of helpful utilities or code for external services
 - **`src/utils/*`** - Almost the same as `lib` just with code built to be used in components
 - **`src/stitches/*`** - Setup for stitches themes including colors, spaces, fonts and more
-
-## Running Locally
-
-```bash
-git clone https://github.com/jahirfiquitiva/jahir.dev.git
-cd jahir.dev
-yarn
-```
-
-Create a `.env` file similar to [`.env.example`](https://github.com/jahirfiquitiva/jahir.dev/blob/main/.env.example).
-
-```bash
-yarn dev
-```
-
-## Cloning / Forking
-
-Please review the [license](https://github.com/jahirfiquitiva/jahir.dev/blob/main/LICENSE), do not copy it directly, remove all of my personal information (resume, blog posts, images, etc.) and change the styling and colors to match your personal brand. You are free to use this code as inspiration or learning reference but this is not a template.
-
-## Previous versions
-
-All the previous versions of this website can be found at [jahirfiquitiva/prev-websites](https://github.com/jahirfiquitiva/prev-websites)
-# youaregreat-delete-it-
