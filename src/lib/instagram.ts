@@ -27,7 +27,7 @@ const fetchSelfFeed = async () => {
     id: post.id,
     caption: post.caption,
     postUrl: post.permalink,
-    photoUrl: `https://sroc.jahir.dev/${post.photo || post.mediaUrl}`,
+    photoUrl: post.mediaUrl,
   }));
 };
 
@@ -36,7 +36,7 @@ const fetchFeedWithKey = async (
 ): Promise<Array<InstagramPost>> => {
   if (!key) return [];
 
-  const response = await fetch(`https://feeds.behold.so/${key}`);
+  const response = await fetch('https://feeds.behold.so/mEsjrsyLBHFtmBOkEYPh');
   const data: Array<RemoteInstagramPost> = await response.json();
 
   return (data || []).map((post) => ({
@@ -58,6 +58,6 @@ export const fetchInstaFeed = async (): Promise<Array<InstagramPost>> => {
     const selfFeed = await fetchSelfFeed();
     if (selfFeed && selfFeed.length) return selfFeed;
     return [];
-  } catch (e) {}
+  } catch (e) { }
   return [];
 };

@@ -53,7 +53,7 @@ const invertedStyles: StitchesCSS = {
   },
 };
 // eslint-disable-next-line no-useless-escape
-const allowlist = ['localhost', '/', '/'];
+const allowlist = ['localhost', 'heypiyush', '/'];
 const hostRegex = new RegExp(allowlist.join('|'));
 const useInvertedStyles = (): StitchesCSS | undefined => {
   const hasMounted = useHasMounted();

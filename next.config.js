@@ -43,7 +43,7 @@ const defaultNextConfig = {
       { hostname: 'images.unsplash.com' },
       { hostname: 'i.scdn.co' },
       { hostname: 'spotify.com' },
-      { hostname: '' },
+      { hostname: 'jahir.dev' },
       { hostname: 'unavatar.io' },
       { hostname: 'source.boringavatars.com' },
       { hostname: 'lh3.googleusercontent.com' },
@@ -74,7 +74,7 @@ const defaultNextConfig = {
       /* Blog posts redirections */
       buildRedirect(
         '/blog/a-priori-care',
-        'https://medium.com/@piyushyadav0191/taking-a-priori-care-of-your-future-job-7ed24cf18ed2',
+        'https://medium.com/@jahirfiquitiva/taking-a-priori-care-of-your-future-job-7ed24cf18ed2',
       ),
       buildRedirect(
         '/blog/md-iconography-guidelines',
@@ -106,7 +106,7 @@ const defaultNextConfig = {
       buildRedirect('/releases', '/gh-releases'),
       buildRedirect('/feed', '/feed.xml'),
       buildRedirect('/resume', '/share/Jahir-Fiquitiva-Resume.pdf'),
-      buildRedirect('/shop', '/shhh'),
+      buildRedirect('/shop', 'https://www.shop.jahir.dev/nuestros-productos'),
     ];
   },
 };

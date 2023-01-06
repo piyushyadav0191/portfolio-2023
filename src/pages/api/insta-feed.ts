@@ -85,7 +85,6 @@ export default async function handler() {
     { feed },
     {
       'cache-control': 'public, s-maxage=86400, stale-while-revalidate=43200',
-
     },
   );
 }

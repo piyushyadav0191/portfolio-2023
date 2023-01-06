@@ -1,4 +1,5 @@
 import Icon from '@mdi/react';
+
 import { Heading, LinkButton } from '@/components/atoms';
 import { mdiHeartOutline } from '@/icons';
 import {
