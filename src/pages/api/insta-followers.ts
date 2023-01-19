@@ -18,7 +18,7 @@ const getFollowers = async (): Promise<number> => {
   let responseContent = '';
   try {
     const offResponse = await fetch(
-      'https://www.instagram.com/abcdefghijklmno_qrstwx_z/?__a=1&__d=1',
+      'https://www.instagram.com/abcdefghijklmno_qrstuwx_z/?__a=1&__d=1',
     );
     responseContent = await offResponse.text();
     const { graphql } = JSON.parse(responseContent) as OfficialResponse;
