@@ -121,7 +121,7 @@ export const SocialLinks = () => {
       <li>
         <InstagramLink
           title={'Instagram'}
-          href={'https://www.instagram.com/abcdefghijklmno_qrstwx_z/'}
+          href={'https://www.instagram.com/abcdefghijklmno_qrstuwx_z/'}
         >
           <Icon path={mdiInstagram} size={iconSize} />
         </InstagramLink>
