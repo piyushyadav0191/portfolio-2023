@@ -26,7 +26,7 @@ const requestNowPlayingFromLanyard = async () => {
     }
     return buildApiResponse(200, { isPlaying: false });
   } catch (e) {
-    return buildApiResponse(200, { isPlaying: false });
+    return buildApiResponse(404, { isPlaying: false });
   }
 };
 
