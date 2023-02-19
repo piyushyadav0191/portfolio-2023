@@ -36,7 +36,7 @@ const fetchFeedWithKey = async (
 ): Promise<Array<InstagramPost>> => {
   if (!key) return [];
 
-  const response = await fetch('https://feeds.behold.so/mEsjrsyLBHFtmBOkEYPh');
+  const response = await fetch(''); // feeds behold 
   const data: Array<RemoteInstagramPost> = await response.json();
 
   return (data || []).map((post) => ({
