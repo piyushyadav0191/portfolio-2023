@@ -45,7 +45,7 @@
 - **`src/components/mdx/*`** - Components built specifically for MDX content
 - **`src/hooks/*`** - A couple hooks used throughout the app
 - **`src/providers/*`** - React Contexts for different purposes such as: current theme, blog post reactions, sponsors data.
-- **`src/pages/api/*`** - [API routes](https://nextjs.org/docs/api-routes/introduction) powering [`/dashboard`](https://jahir.dev/dashboard), blog post reactions and views, and a page to download github releases assets
+- **`src/pages/api/*`** - [API routes](https://nextjs.org/docs/api-routes/introduction) powering dashboard, blog post reactions and views, and a page to download github releases assets
 - **`src/pages/blog/*`** - Static pre-rendered blog pages using MDX
 - **`src/pages/projects/*`** - Static pre-rendered projects pages using MDX
 - **`src/pages/*`** - All other static pages
