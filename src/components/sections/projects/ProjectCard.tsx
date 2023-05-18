@@ -140,10 +140,10 @@ export const ProjectCard: FC<ProjectCardProps> = (props) => {
   return (
     <StyledProjectCard
       title={`Project: ${project?.name}`}
-      href={
+    href={
         project.inProgress || project.hide
           ? project.link
-          : `/projects/${project.slug}`
+          : `https://github.com/piyushyadav0191/${project.repo}`
       }
       underline={false}
       css={{ $$color: color || '$colors$toolbar-glow' }}
