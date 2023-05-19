@@ -118,14 +118,7 @@ export const SocialLinks = () => {
           <Icon path={mastodon} size={iconSize} />
         </MastodonLink>
       </li>
-      <li>
-        <InstagramLink
-          title={'Instagram'}
-          href={'https://www.instagram.com/abcdefghijklmno_qrstuwx_z/'}
-        >
-          <Icon path={mdiInstagram} size={iconSize} />
-        </InstagramLink>
-      </li>
+  
 
     </SocialLinksContainer>
   );
