@@ -24,10 +24,10 @@ const WaveSpan = styled('span', {
 });
 
 const hellos = [
-  'Hello, world',
-  'Hola, mundo',
-  'Ciao, mondo',
-  'Hallo, Welt',
+  'Hello there',
+  'नमस्ते जी',
+  'Привет',
+  'こんにちは',
   'Salut, monde',
   'Olá, mundo',
 ];
