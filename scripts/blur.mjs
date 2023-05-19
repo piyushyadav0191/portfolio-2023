@@ -44,7 +44,6 @@ const images =
     : page === 'contact'
     ? [...Array(contactImagesCount).keys()]
     : [];
-
 if (images.length) {
   getPlaceholdersForImages(page, images).then((results) => {
     if (!results || !results.length) return;
