@@ -67,5 +67,4 @@ const Project = defineDocumentType(() => ({
   },
   computedFields,
 }));
-
 export default Project;
