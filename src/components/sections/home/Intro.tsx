@@ -74,7 +74,7 @@ export const Intro: FC = () => {
           </Heading>
         </Heading>
         <Paragraph>
-          Passionate and creative Web Developer based in{' '}
+          Passionate and creative Full Stack developer based in{' '}
           <Link
             title={'India on Google Maps'}
             href={'https://www.google.com/maps/place/india/'}
