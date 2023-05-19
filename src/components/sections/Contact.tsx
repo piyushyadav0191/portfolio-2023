@@ -145,11 +145,11 @@ export const Contact: FC<{ image: RandomPageImage }> = ({ image }) => {
               <span>piyushyadav0191@gmail.com</span>
             </ContactOption>
             <ContactOption
-              title={'Compose a Twitter direct message for Piyush'}
-              href={''}
+              title={'Compose a LinkedIn direct message for Piyush'}
+              href={'https://www.linkedin.com/in/piyushyadav0191/'}
               twitter
             >
-              <span>Twitter</span>
+              <span>linkedIn</span>
               <span>piyushyadav0191</span>
             </ContactOption>
             <ContactOption
