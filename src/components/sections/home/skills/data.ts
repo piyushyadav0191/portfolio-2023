@@ -17,6 +17,13 @@ import {
   mdiPaletteSwatchOutline,
   mdiTailwind,
   nextJs,
+  mdiPostgreSQL,
+  mdiPrisma,
+  mdiNextAuth,
+  mdiZustandRedux,
+  mdiGo,
+  mdiLinux,
+  mdiDocker,
 } from '@/icons';
 
 export interface SkillProps {
@@ -27,27 +34,26 @@ export interface SkillProps {
 }
 
 export const skills: SkillProps[] = [
-  { name: 'Android', iconPath: mdiAndroid, color: '#3ddc84' },
   { name: 'React Native', iconPath: mdiLanguageKotlin, color: '#6677e0' },
+  { name: 'Go', iconPath: mdiGo, color: '#3ddc84' },
   { name: 'JavaScript', iconPath: mdiLanguageJavascript, color: '#f7df1e' },
   { name: 'TypeScript', iconPath: mdiLanguageTypescript, color: '#3178c6' },
   { name: 'HTML5', iconPath: mdiLanguageHtml5, color: '#e34f26' },
   { name: 'CSS3', iconPath: mdiLanguageCss3, color: '#3572b5' },
-  { name: 'React', iconPath: mdiReact, color: '#00c2e6' },
-  { name: 'NextJS', iconPath: nextJs, color: '#0070f3' },
-  {
-    name: 'Styled Components',
-    iconPath: mdiPaletteSwatchOutline,
-    color: '#c43bad',
-  },
-  { name: 'Tailwind', iconPath: mdiTailwind, color: '#06b6d4', hide: true },
+  { name: 'NextJS13/React', iconPath: nextJs, color: '#0070f3' },
+  { name: 'TailwindCSS', iconPath: mdiTailwind, color: '#c43bad' },
   { name: 'Node JS', iconPath: mdiNodejs, color: '#61af43' },
   { name: 'Mongo DB', iconPath: mdiLeaf, color: '#69a14a' },
   { name: 'Express', iconPath: mdiPuzzleOutline, color: '#888888' },
   { name: 'Java', iconPath: mdiLanguageJava, color: '#ea2e2f' },
   { name: 'Graphql', iconPath: mdiLanguagePython, color: '#3a74a5' },
   { name: 'Git', iconPath: mdiGit, color: '#fc6d26' },
-  { name: 'Material Design', iconPath: mdiMaterialDesign, color: '#888888' },
+  { name: 'PostgreSQL', iconPath: mdiPostgreSQL, color: '#888888' },
+  { name: 'Prisma', iconPath: mdiPrisma, color: '#0070f3' },
+  { name: 'Next Auth', iconPath: mdiNextAuth, color: '#f7df1e' },
+  { name: 'Zustand/RTK', iconPath: mdiZustandRedux, color: '#e34f26' },
+  { name: 'Linux', iconPath: mdiLinux, color: '#6677e0' },
+  { name: 'Docker', iconPath: mdiDocker, color: '#c43bad' },
   {
     name: 'Community',
     iconPath: mdiAccountGroupOutline,
