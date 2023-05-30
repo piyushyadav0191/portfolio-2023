@@ -5,7 +5,7 @@ export const formatDate = (
   if (!preDate || preDate.length <= 0) return '';
   try {
     const date = new Date(preDate);
-    return new Intl.DateTimeFormat('en-US', {
+    return new Intl.DateTimeFormat('en-IN', {
       month: 'long',
       day: '2-digit',
       year: 'numeric',
