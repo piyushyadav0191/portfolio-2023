@@ -31,9 +31,8 @@ const imagesAlts: Array<string> = [
   "At college with my friends  – jun '21",
   "Birthday of Mine – Sep '08",
   "At college with my friends  – jun '21",
-  "On the Way to Stadium – Mar '20",
+  "Chilling with bruh - Jun 02 '23",
   "Cricket was fun at that Time – April '19",
-  "Chilling with bruh - Jun 0 '23",
 ];
 
 export const getStaticProps: GetStaticProps = async () => {

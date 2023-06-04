@@ -86,8 +86,9 @@ export const About: FC<{ image: RandomPageImage }> = ({ image }) => {
       </Paragraph>
 
       <Paragraph>
-        Before getting into software development, I wanted to make some real time Web Applications. When I started programming my first Applications, I
-        realized what my real passion was and started learning more about
+        Before getting into software development, I wanted to make some real
+        time Web Applications. When I started programming my first Applications,
+        I realized what my real passion was and started learning more about
         software development.
       </Paragraph>
 
