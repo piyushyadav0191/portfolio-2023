@@ -86,18 +86,7 @@ const secondaryLinks: Array<FooterLinkProps> = [
     title: 'Idol',
     href: 'https://en.wikipedia.org/wiki/Grant_Gustin',
     gradient: 'yellow-to-orange',
-  },
-
-  {
-    title: 'Static',
-    href: 'https://www.piyushdev.tk/',
-    gradient: 'brand-to-blue',
-  },
-  {
-    title: '2022 Portfolio',
-    href: 'https://portfolio-updated-nine.vercel.app/',
-    gradient: 'purple-to-brand',
-  },
+  }
 ];
 
 const metaLinks: Array<FooterLinkProps> = [
