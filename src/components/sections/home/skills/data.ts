@@ -24,6 +24,7 @@ import {
   mdiGo,
   mdiLinux,
   mdiDocker,
+  mdiT3,
 } from '@/icons';
 
 export interface SkillProps {
@@ -54,6 +55,7 @@ export const skills: SkillProps[] = [
   { name: 'Zustand/RTK', iconPath: mdiZustandRedux, color: '#e34f26' },
   { name: 'Linux', iconPath: mdiLinux, color: '#6677e0' },
   { name: 'Docker', iconPath: mdiDocker, color: '#c43bad' },
+  { name: 'T3', iconPath: mdiT3, color: '#888888' },
   {
     name: 'Community',
     iconPath: mdiAccountGroupOutline,
