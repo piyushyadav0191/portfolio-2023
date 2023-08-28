@@ -86,6 +86,11 @@ const secondaryLinks: Array<FooterLinkProps> = [
     title: 'Idol',
     href: 'https://en.wikipedia.org/wiki/Grant_Gustin',
     gradient: 'yellow-to-orange',
+  },
+   {
+    title: 'Source',
+    href: 'https://github.com/piyushyadav0191',
+    gradient: 'blue-to-green',
   }
 ];
 
@@ -101,7 +106,7 @@ const metaLinks: Array<FooterLinkProps> = [
     title: 'medium',
     href: 'https://medium.com/@piyushyadav0191',
     gradient: 'brand-to-blue',
-    a11yTitle: 'View source code on GitHub',
+    a11yTitle: 'my medium profile',
     openInNewTab: true,
   },
 ];
