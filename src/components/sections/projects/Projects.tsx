@@ -98,11 +98,11 @@ export const Projects: FC<ProjectsProps> = (props) => {
         <ProjectsButtons>
           <LinkButton
             title={'Piyush Yadav'}
-            href={'/'}
+            href={'/share/Piyush-Yadav-Resume.pdf'}
             outlined
           >
             <Icon path={mdiFileCodeOutline} size={0.9} />
-            Github Links/Live Link
+         Resume
           </LinkButton>
           {!showFullList && (
             <LinkButton
