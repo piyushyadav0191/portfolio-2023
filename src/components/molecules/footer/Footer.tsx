@@ -89,7 +89,7 @@ const secondaryLinks: Array<FooterLinkProps> = [
   },
    {
     title: 'Source',
-    href: 'https://github.com/piyushyadav0191',
+    href: 'https://github.com/piyushyadav0191/portfolio',
     gradient: 'blue-to-green',
   }
 ];
