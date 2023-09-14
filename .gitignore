@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+/.env.test
 # next.js
 /.next/
 /out/

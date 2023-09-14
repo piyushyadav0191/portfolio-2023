@@ -28,7 +28,7 @@
     "downlevelIteration": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": [".next", ".idea", "node_modules"],
+  "exclude": [".next", ".idea", "node_modules", "out"],
   "include": [
     "next-env.d.ts",
     "global.d.ts",

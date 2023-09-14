@@ -1,5 +1,5 @@
-import { createStitches } from '@stitches/react';
-import type { CSS } from '@stitches/react';
+import { createStitches } from "@stitches/react";
+import type { CSS } from "@stitches/react";
 
 import {
   fonts,
@@ -9,7 +9,7 @@ import {
   darkThemeColors,
   breakpoints,
   spaces,
-} from '@/stitches';
+} from "@/stitches";
 
 const systemFont =
   // eslint-disable-next-line max-len
@@ -28,7 +28,7 @@ export const {
   theme: {
     colors,
     sizes: {
-      'max-site-width': '666px',
+      "max-site-width": "666px",
     },
     fontSizes,
     fonts: {
@@ -43,48 +43,49 @@ export const {
   utils,
   media: {
     ...breakpoints,
-    hover: '(any-hover: hover)',
-    animations: '(prefers-reduced-motion: no-preference)',
-    reduceMotion: '(prefers-reduced-motion: reduce)',
+    hover: "(any-hover: hover)",
+    animations: "(prefers-reduced-motion: no-preference)",
+    reduceMotion: "(prefers-reduced-motion: reduce)",
   },
 });
 
-export const darkTheme = createTheme('dark', {
+export const darkTheme = createTheme("dark", {
   colors: darkThemeColors,
 });
 
 export const globalStyles = globalCss({
-  '@font-face': [...fonts.Inter.family, ...fonts.Manrope.family],
-  'html, body': {
-    useFont: 'inter',
-    accentColor: '$colors$accent',
+  "@font-face": [...fonts.Inter.family, ...fonts.Manrope.family],
+  "html, body": {
+    useFont: "inter",
+    accentColor: "$colors$accent",
   },
-  'h1, h2, h3, h4, h5, h6, button': {
-    useFont: 'manrope',
+  "h1, h2, h3, h4, h5, h6, button": {
+    useFont: "manrope",
   },
-  '#__next': {
-    $$totalToolbarHeight: '64px',
-    $$scrollMargin: 'calc($$totalToolbarHeight + $space$8)',
-    $$verticalContentPadding: '$space$24',
-    '@tablet-sm': {
-      $$totalToolbarHeight: '68px',
-      $$scrollMargin: 'calc($$totalToolbarHeight + $space$16)',
-      $$verticalContentPadding: '$space$30',
+  "#__next": {
+    $$totalToolbarHeight: "64px",
+    $$scrollMargin: "calc($$totalToolbarHeight + $space$8)",
+    $$verticalContentPadding: "$space$24",
+    "@tablet-sm": {
+      $$totalToolbarHeight: "68px",
+      $$scrollMargin: "calc($$totalToolbarHeight + $space$16)",
+      $$verticalContentPadding: "$space$30",
     },
-    '@tablet-lg': {
-      $$verticalContentPadding: '$space$36',
+    "@tablet-lg": {
+      $$verticalContentPadding: "$space$36",
     },
-    '& section': {
-      scrollMarginTop: '$$scrollMargin',
+    "& section": {
+      scrollMarginTop: "$$scrollMargin",
     },
   },
-  '@reduceMotion': {
-    '*, *::after, *::before': {
-      animationDuration: '1ms !important',
-      animationDelay: '-1ms !important',
-      animationIterationCount: '1 !important',
-      transitionDuration: '1ms !important',
-      transitionDelay: '-1ms !important',
+  "@reduceMotion": {
+    "*, *::after, *::before": {
+      animationDuration: "1ms !important",
+      animationDelay: "-1ms !important",
+      animationIterationCount: "1 !important",
+      transitionDuration: "1ms !important",
+      transitionDelay: "-1ms !important",
+      // transitionDelay: "-1ms !important",
     },
   },
 });
