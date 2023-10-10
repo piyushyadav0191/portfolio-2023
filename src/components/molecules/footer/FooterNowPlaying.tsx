@@ -1,8 +1,10 @@
+import React from 'react';
+import useSWR from 'swr';
+
 import Icon from '@mdi/react';
 import { LineWobble } from '@uiball/loaders';
 
 import { Img, Link } from '@/components/atoms';
-import { useNowPlaying } from '@/hooks/useNowPlaying';
 import { mdiSpotify } from '@/icons';
 import type { FC } from '@/types';
 import { styled, keyframes, type StitchesCSS } from '~/stitches';
@@ -168,8 +170,12 @@ const LoadingContainer = styled('div', {
   },
 });
 
-export const FooterNowPlaying: FC = () => {
-  const { data, loading } = useNowPlaying();
+export const FooterNowPlaying = (props: Props) => {
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+  const { data, error, isLoading } = useSWR('/api/now-playing', fetcher, {
+    refreshInterval: 1000,
+  });
 
   const renderComponents = () => {
     if (!data || !data.isPlaying) {
@@ -189,7 +195,7 @@ export const FooterNowPlaying: FC = () => {
         >
           <RotatingImg
             size={26}
-            src={data.image?.url || ''}
+            src={data.albumImageUrl || ''}
             alt={`Album image for song "${data.title}" by "${data.artist}"`}
           />
           <ScrollContainer css={{ $$animDuration: `${animationDuration}s` }}>
@@ -204,7 +210,7 @@ export const FooterNowPlaying: FC = () => {
     <>
       <PseudoLi></PseudoLi>
       <MusicItem>
-        {loading ? (
+        {isLoading ? (
           <LoadingContainer>
             <LineWobble
               size={84}
