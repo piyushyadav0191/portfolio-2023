@@ -174,7 +174,6 @@ export const FooterNowPlaying = () => {
   const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
 
   const { data, error, isLoading } = useSWR('/api/now-playing', fetcher, {
-    refreshInterval: 1000,
     revalidateIfStale: true,
     revalidateOnFocus: true,
     revalidateOnMount: true,
