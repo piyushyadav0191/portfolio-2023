@@ -173,15 +173,10 @@ const LoadingContainer = styled('div', {
 export const FooterNowPlaying = () => {
   const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
 
-  const { data, error, isLoading } = useSWR('/api/now-playing', fetcher, {
-    revalidateIfStale: true,
-    revalidateOnFocus: true,
-    revalidateOnMount: true,
-    revalidateOnReconnect: true,
-  });
+  const { data, error, isLoading } = useSWR('/api/now-playing', fetcher);
 
   const renderComponents = () => {
-    if (!data || !data.isPlaying) {
+    if (!data) {
       return (
         <NotPlayingContainer>
           <Icon path={mdiSpotify} size={0.85} />
