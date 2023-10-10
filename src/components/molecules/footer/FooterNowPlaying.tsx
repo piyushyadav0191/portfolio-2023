@@ -175,6 +175,10 @@ export const FooterNowPlaying = () => {
 
   const { data, error, isLoading } = useSWR('/api/now-playing', fetcher, {
     refreshInterval: 1000,
+    revalidateIfStale: true,
+    revalidateOnFocus: true,
+    revalidateOnMount: true,
+    revalidateOnReconnect: true,
   });
 
   const renderComponents = () => {
