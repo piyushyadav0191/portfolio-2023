@@ -176,7 +176,7 @@ export const FooterNowPlaying = () => {
   const { data, error, isLoading } = useSWR('/api/now-playing', fetcher);
 
   const renderComponents = () => {
-    if (!data) {
+    if (!data || !data.isPlaying) {
       return (
         <NotPlayingContainer>
           <Icon path={mdiSpotify} size={0.85} />
